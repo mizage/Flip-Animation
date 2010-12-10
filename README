@@ -1,0 +1,10 @@
+This is a NSWindow extension that allows you to flip from one window to another along the vertical axis, much like what is standard on iOS.
+
+Usage:
+
+NSWindow* from = ...
+NSWindow* to = ...
+
+FlipArguments* flipArgs = [[FlipArguments alloc] initWithToWindow:to flipDuration:2.5 shadowed:NO];
+
+[from flipWithArguments:flipArgs];
