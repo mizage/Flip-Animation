@@ -84,8 +84,14 @@
 
 @implementation NSWindow (Flipper)
 
+-(void)flipToWindow:(NSWindow*)to withDuration:(CFTimeInterval)duration shadowed:(BOOL)shadowed
+{
+  FlipArguments* args = [[FlipArguments alloc] initWithToWindow:to flipDuration:duration shadowed:shadowed];
+  [self flipWithArguments:args];
+  [args release];
+}
 
--(void)flipWithArguments:(FlipArguments*)flipArguments;
+-(void)flipWithArguments:(FlipArguments*)flipArguments
 {
   NSWindow* toWindow = [flipArguments toWindow];
   CFTimeInterval duration = [flipArguments duration];

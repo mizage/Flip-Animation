@@ -21,6 +21,7 @@
 
 @interface NSWindow (Flipper)
 
+-(void)flipToWindow:(NSWindow*)to withDuration:(CFTimeInterval)duration shadowed:(BOOL)shadowed;
 -(void)flipWithArguments:(FlipArguments*)flipArguments;
 
 @end
