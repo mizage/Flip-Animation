@@ -1303,13 +1303,14 @@
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMinSize">{300, 200}</string>
 				<object class="NSView" key="NSWindowView" id="439893737">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSBox" id="588965721">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">63</int>
+							<int key="NSvFlags">18</int>
 							<array class="NSMutableArray" key="NSSubviews">
 								<object class="NSView" id="478823981">
 									<reference key="NSNextResponder" ref="588965721"/>
@@ -1362,7 +1363,7 @@
 						</object>
 						<object class="NSTextField" id="553796758">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">301</int>
+							<int key="NSvFlags">303</int>
 							<string key="NSFrame">{{17, 172}, {446, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -1402,7 +1403,7 @@
 						</object>
 						<object class="NSButton" id="584104980">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">289</int>
 							<string key="NSFrame">{{272, 32}, {174, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -1431,6 +1432,7 @@
 					<reference key="NSNextKeyView" ref="588965721"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1080}}</string>
+				<string key="NSMinSize">{300, 222}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
@@ -1443,13 +1445,14 @@
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMinSize">{300, 200}</string>
 				<object class="NSView" key="NSWindowView" id="817830754">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSBox" id="976250214">
 							<reference key="NSNextResponder" ref="817830754"/>
-							<int key="NSvFlags">63</int>
+							<int key="NSvFlags">18</int>
 							<array class="NSMutableArray" key="NSSubviews">
 								<object class="NSView" id="534280849">
 									<reference key="NSNextResponder" ref="976250214"/>
@@ -1490,7 +1493,7 @@
 						</object>
 						<object class="NSTextField" id="609334214">
 							<reference key="NSNextResponder" ref="817830754"/>
-							<int key="NSvFlags">301</int>
+							<int key="NSvFlags">303</int>
 							<string key="NSFrame">{{17, 172}, {446, 17}}</string>
 							<reference key="NSSuperview" ref="817830754"/>
 							<reference key="NSWindow"/>
@@ -1510,7 +1513,7 @@
 						</object>
 						<object class="NSButton" id="235787481">
 							<reference key="NSNextResponder" ref="817830754"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">289</int>
 							<string key="NSFrame">{{278, 32}, {168, 32}}</string>
 							<reference key="NSSuperview" ref="817830754"/>
 							<reference key="NSWindow"/>
@@ -1539,6 +1542,7 @@
 					<reference key="NSNextKeyView" ref="976250214"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1080}}</string>
+				<string key="NSMinSize">{300, 222}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
