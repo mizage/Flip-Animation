@@ -12,15 +12,16 @@
 
 @implementation FlipArguments
 
-@synthesize toWindow,duration,shadowed;
+@synthesize toWindow, duration, shadowed, direction;
 
--(id)initWithToWindow:(NSWindow*)ToWindow flipDuration:(CFTimeInterval)Duration shadowed:(BOOL)Shadowed;
+-(id)initWithToWindow:(NSWindow*)ToWindow flipDuration:(CFTimeInterval)Duration shadowed:(BOOL)Shadowed direction:(NYFlipDirection)theDirection;
 {
   if(self = [super init])
   {
-    toWindow = ToWindow;
-    duration = Duration;
-    shadowed = Shadowed;
+      toWindow = ToWindow;
+      duration = Duration;
+      shadowed = Shadowed;
+      direction = theDirection;
   }
   return self;
 }
@@ -83,11 +84,16 @@
 
 @implementation NSWindow (Flipper)
 
+-(void)flipToWindow:(NSWindow*)to withDuration:(CFTimeInterval)duration shadowed:(BOOL)shadowed direction:(NYFlipDirection)direction
+{
+    FlipArguments* args = [[FlipArguments alloc] initWithToWindow:to flipDuration:duration shadowed:shadowed direction:direction];
+    [self flipWithArguments:args];
+    [args release];
+}
+
 -(void)flipToWindow:(NSWindow*)to withDuration:(CFTimeInterval)duration shadowed:(BOOL)shadowed
 {
-  FlipArguments* args = [[FlipArguments alloc] initWithToWindow:to flipDuration:duration shadowed:shadowed];
-  [self flipWithArguments:args];
-  [args release];
+    [self flipToWindow:to withDuration:duration shadowed:shadowed direction:NYFlipDirectionLeft];
 }
 
 -(void)flipWithArguments:(FlipArguments*)flipArguments
@@ -95,7 +101,8 @@
   NSWindow* toWindow = [flipArguments toWindow];
   CFTimeInterval duration = [flipArguments duration];
   BOOL shadowed = [flipArguments shadowed];
-  
+    NYFlipDirection direction = [flipArguments direction];
+      
   //Center the toWindow under the fromWindow
   [toWindow setMidpoint:[self midpoint]];
   
@@ -225,7 +232,12 @@
   
   //The zDistance is what makes it look like the window is rotating around a center. Playing with this value is fun. Try it!
   int zDistance = 850;
-  
+      
+    // If we're flipping to the right we need to change the sign on the zDirection
+    if (direction == NYFlipDirectionRight) {
+        zDistance *= -1;
+    }
+    
   CATransform3D fromTransform = CATransform3DIdentity;
   fromTransform.m34 = 1.0 / -zDistance;
   fromTransform = CATransform3DRotate(fromTransform,M_PI,0.0f, 1.0f, 0.0f);

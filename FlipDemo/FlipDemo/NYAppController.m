@@ -15,7 +15,7 @@
 
 - (IBAction)showMainWindow:(id)sender
 {
-    [self.detailWindow flipToWindow:self.mainWindow withDuration:1.0 shadowed:YES];
+    [self.detailWindow flipToWindow:self.mainWindow withDuration:1.0 shadowed:YES direction:NYFlipDirectionRight];
 }
 
 - (IBAction)showDetailWindow:(id)sender
