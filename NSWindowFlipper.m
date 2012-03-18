@@ -231,7 +231,7 @@
   fromTransform = CATransform3DRotate(fromTransform,M_PI,0.0f, 1.0f, 0.0f);
   
   CATransform3D toTransform = CATransform3DIdentity;
-  toTransform.m34 = 1.0 / -zDistance;
+  toTransform.m34 = 1.0 / zDistance;
   toTransform = CATransform3DRotate(toTransform,2*M_PI,0.0f, 1.0f, 0.0f);
   
   //Apply all our options to our animations
