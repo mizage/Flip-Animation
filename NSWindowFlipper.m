@@ -102,7 +102,10 @@
   CFTimeInterval duration = [flipArguments duration];
   BOOL shadowed = [flipArguments shadowed];
     NYFlipDirection direction = [flipArguments direction];
-      
+  
+    // Synch the frames of the two windows
+    [toWindow setFrame:self.frame display:YES];
+    
   //Center the toWindow under the fromWindow
   [toWindow setMidpoint:[self midpoint]];
   
