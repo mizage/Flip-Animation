@@ -16,3 +16,9 @@ FlipArguments* flipArgs = [[FlipArguments alloc] initWithToWindow:to flipDuratio
 //To execute the flip immediately, use:
 
 [from flipToWindow:to withDuration:2.5 shadowed:NO];
+
+The default flip direction is to the left. However, you can control the flip direction by using:
+
+[from flipToWindow:to withDuration:2.5 shadowed:NO direction:NYFlipDirectionRight]
+
+See the FlipDemo project for more information.

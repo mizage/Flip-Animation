@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CD740DB151624060071C219 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD740DA151624060071C219 /* Cocoa.framework */; };
+		3CD740E5151624060071C219 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CD740E3151624060071C219 /* InfoPlist.strings */; };
+		3CD740E7151624060071C219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD740E6151624060071C219 /* main.m */; };
+		3CD740EB151624060071C219 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3CD740E9151624060071C219 /* Credits.rtf */; };
+		3CD740EE151624060071C219 /* NYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD740ED151624060071C219 /* NYAppDelegate.m */; };
+		3CD740FB151624220071C219 /* NSWindow+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD740F8151624220071C219 /* NSWindow+Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CD740FC151624220071C219 /* NSWindowFlipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD740FA151624220071C219 /* NSWindowFlipper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CD741001516246C0071C219 /* NYAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD740FF1516246C0071C219 /* NYAppController.m */; };
+		3CD74102151624850071C219 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD74101151624850071C219 /* MainMenu.xib */; };
+		3CD74104151624C10071C219 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD74103151624C10071C219 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CD740D6151624060071C219 /* FlipDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD740DA151624060071C219 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3CD740DD151624060071C219 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3CD740DE151624060071C219 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3CD740DF151624060071C219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CD740E2151624060071C219 /* FlipDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipDemo-Info.plist"; sourceTree = "<group>"; };
+		3CD740E4151624060071C219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CD740E6151624060071C219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CD740E8151624060071C219 /* FlipDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3CD740EA151624060071C219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3CD740EC151624060071C219 /* NYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYAppDelegate.h; sourceTree = "<group>"; };
+		3CD740ED151624060071C219 /* NYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYAppDelegate.m; sourceTree = "<group>"; };
+		3CD740F7151624220071C219 /* NSWindow+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+Additions.h"; path = "../NSWindow+Additions.h"; sourceTree = "<group>"; };
+		3CD740F8151624220071C219 /* NSWindow+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+Additions.m"; path = "../NSWindow+Additions.m"; sourceTree = "<group>"; };
+		3CD740F9151624220071C219 /* NSWindowFlipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSWindowFlipper.h; path = ../NSWindowFlipper.h; sourceTree = "<group>"; };
+		3CD740FA151624220071C219 /* NSWindowFlipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSWindowFlipper.m; path = ../NSWindowFlipper.m; sourceTree = "<group>"; };
+		3CD740FE1516246C0071C219 /* NYAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAppController.h; sourceTree = "<group>"; };
+		3CD740FF1516246C0071C219 /* NYAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAppController.m; sourceTree = "<group>"; };
+		3CD74101151624850071C219 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		3CD74103151624C10071C219 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CD740D3151624060071C219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD74104151624C10071C219 /* QuartzCore.framework in Frameworks */,
+				3CD740DB151624060071C219 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CD740CB151624060071C219 = {
+			isa = PBXGroup;
+			children = (
+				3CD740FD151624280071C219 /* WindowFlipper */,
+				3CD740E0151624060071C219 /* FlipDemo */,
+				3CD740D9151624060071C219 /* Frameworks */,
+				3CD740D7151624060071C219 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CD740D7151624060071C219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740D6151624060071C219 /* FlipDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD740D9151624060071C219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740DA151624060071C219 /* Cocoa.framework */,
+				3CD74103151624C10071C219 /* QuartzCore.framework */,
+				3CD740DC151624060071C219 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CD740DC151624060071C219 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740DD151624060071C219 /* AppKit.framework */,
+				3CD740DE151624060071C219 /* CoreData.framework */,
+				3CD740DF151624060071C219 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3CD740E0151624060071C219 /* FlipDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740EC151624060071C219 /* NYAppDelegate.h */,
+				3CD740ED151624060071C219 /* NYAppDelegate.m */,
+				3CD740FE1516246C0071C219 /* NYAppController.h */,
+				3CD740FF1516246C0071C219 /* NYAppController.m */,
+				3CD74101151624850071C219 /* MainMenu.xib */,
+				3CD740E1151624060071C219 /* Supporting Files */,
+			);
+			path = FlipDemo;
+			sourceTree = "<group>";
+		};
+		3CD740E1151624060071C219 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740E2151624060071C219 /* FlipDemo-Info.plist */,
+				3CD740E3151624060071C219 /* InfoPlist.strings */,
+				3CD740E6151624060071C219 /* main.m */,
+				3CD740E8151624060071C219 /* FlipDemo-Prefix.pch */,
+				3CD740E9151624060071C219 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CD740FD151624280071C219 /* WindowFlipper */ = {
+			isa = PBXGroup;
+			children = (
+				3CD740F7151624220071C219 /* NSWindow+Additions.h */,
+				3CD740F8151624220071C219 /* NSWindow+Additions.m */,
+				3CD740F9151624220071C219 /* NSWindowFlipper.h */,
+				3CD740FA151624220071C219 /* NSWindowFlipper.m */,
+			);
+			name = WindowFlipper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CD740D5151624060071C219 /* FlipDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD740F4151624060071C219 /* Build configuration list for PBXNativeTarget "FlipDemo" */;
+			buildPhases = (
+				3CD740D2151624060071C219 /* Sources */,
+				3CD740D3151624060071C219 /* Frameworks */,
+				3CD740D4151624060071C219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipDemo;
+			productName = FlipDemo;
+			productReference = 3CD740D6151624060071C219 /* FlipDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CD740CD151624060071C219 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Nima Yousefi";
+			};
+			buildConfigurationList = 3CD740D0151624060071C219 /* Build configuration list for PBXProject "FlipDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CD740CB151624060071C219;
+			productRefGroup = 3CD740D7151624060071C219 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CD740D5151624060071C219 /* FlipDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CD740D4151624060071C219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD740E5151624060071C219 /* InfoPlist.strings in Resources */,
+				3CD740EB151624060071C219 /* Credits.rtf in Resources */,
+				3CD74102151624850071C219 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD740D2151624060071C219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD740E7151624060071C219 /* main.m in Sources */,
+				3CD740EE151624060071C219 /* NYAppDelegate.m in Sources */,
+				3CD740FB151624220071C219 /* NSWindow+Additions.m in Sources */,
+				3CD740FC151624220071C219 /* NSWindowFlipper.m in Sources */,
+				3CD741001516246C0071C219 /* NYAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CD740E3151624060071C219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD740E4151624060071C219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CD740E9151624060071C219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD740EA151624060071C219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CD740F2151624060071C219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3CD740F3151624060071C219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3CD740F5151624060071C219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipDemo/FlipDemo-Prefix.pch";
+				INFOPLIST_FILE = "FlipDemo/FlipDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CD740F6151624060071C219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipDemo/FlipDemo-Prefix.pch";
+				INFOPLIST_FILE = "FlipDemo/FlipDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CD740D0151624060071C219 /* Build configuration list for PBXProject "FlipDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD740F2151624060071C219 /* Debug */,
+				3CD740F3151624060071C219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD740F4151624060071C219 /* Build configuration list for PBXNativeTarget "FlipDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD740F5151624060071C219 /* Debug */,
+				3CD740F6151624060071C219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CD740CD151624060071C219 /* Project object */;
+}
